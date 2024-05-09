@@ -16,7 +16,7 @@ for _ in range(num_requests):
 
     driver.get(url)
 
-    time.sleep(5)
+    time.sleep(6)
 
     html = driver.page_source
 
@@ -25,8 +25,8 @@ for _ in range(num_requests):
     soldi = soup.find_all(class_='sc-6c545ecc-2')
 
     transactions.extend(soldi)
-    print(transactions)
-    print('- - - %s seconds - - -' % (time.time() - start_time))
+    #print(transactions)
+    print('- - - %s seconds to collect data- - -' % (time.time() - start_time))
 
 driver.quit()
 
