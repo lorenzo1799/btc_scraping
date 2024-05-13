@@ -25,7 +25,8 @@ for _ in range(num_requests):
     soldi = soup.find_all(class_='sc-6c545ecc-2')
 
     transactions.extend(soldi)
-    #print(transactions)
+    
+    print(transactions)
     print('- - - %s seconds to collect data- - -' % (time.time() - start_time))
 
 driver.quit()
